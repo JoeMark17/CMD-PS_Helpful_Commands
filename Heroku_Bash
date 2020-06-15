@@ -1,0 +1,7 @@
+#To make migrations in Heroku app perform the below
+heroku run bash -a <heroku_app_name>
+
+#navigate to project folder
+python manage.py makemigrations
+
+python manage.py migrate
