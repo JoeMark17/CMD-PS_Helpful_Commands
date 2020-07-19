@@ -1,0 +1,36 @@
+#Terrafrm resource group test for Azure
+#run in the Azure CLI
+git clone https://github.com/JoeMark17/azure-terraform-beginners.git
+
+#Make sure to go to the Terraform file path
+cd azure-terraform-beginners
+
+#Check out the Azure CLI IDE
+code .
+
+#If wanted
+#Create Terraform file in CLI
+touch <newfile?
+
+#initiate terraform 
+terraform init
+
+#Need to add to all Terraform 2.0 main files
+provider "azurerm" {
+   features {}
+}
+
+#check the plan for you terraform file before executing it
+terraform plan
+
+#Apply your Terraform plan to your environment
+terraform apply
+
+#If you want to automate and ensure you are not asked "are you sure"
+terraform apply -force
+
+#Delete all resources created from your Terraform file
+terraform destroy
+
+#If you want to automate and ensure you are not aske "are you sure"
+terraform destroy -force
