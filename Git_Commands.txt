@@ -1,0 +1,7 @@
+#Create new branch in a repo
+git pull / git clone [repository]
+git checkout -b [name_of_new_branch]
+
+#Push the new branch to the repo
+git commit -a -m "commit message"
+git push origin [name_of_new_branch]
